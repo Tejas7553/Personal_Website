@@ -34,7 +34,7 @@ export default function Hero() {
       if (displayed.length < current.length) {
         const t = setTimeout(
           () => setDisplayed(current.slice(0, displayed.length + 1)),
-          60
+          60,
         );
         return () => clearTimeout(t);
       } else {
@@ -72,7 +72,8 @@ export default function Hero() {
         minHeight: "100svh",
         display: "flex",
         alignItems: "center",
-        padding: "clamp(100px, 15vw, 128px) clamp(1rem, 5vw, 2rem) clamp(3rem, 8vw, 5rem)",
+        padding:
+          "clamp(100px, 15vw, 128px) clamp(1rem, 5vw, 2rem) clamp(3rem, 8vw, 5rem)",
       }}
     >
       {/* Cyan glow */}
@@ -105,14 +106,16 @@ export default function Hero() {
       >
         {/* Image — top on mobile */}
         {isMobile && (
-          <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
+          <div
+            style={{ width: "100%", display: "flex", justifyContent: "center" }}
+          >
             <img
               src="/TejasAI.png"
               alt="Tejas Jadhav"
               style={{
-                width: "clamp(180px, 55vw, 300px)",
-                height: "clamp(250px, 65vw, 360px)",
-                objectFit: "cover",
+                width: "clamp(200px, 65vw, 300px)",
+                height: "auto", // ✅ natural height, no cropping
+                objectFit: "contain", // ✅ full image always visible
                 borderRadius: "20px",
                 boxShadow:
                   "0 20px 60px rgba(6, 182, 212, 0.15), 0 0 40px rgba(6, 182, 212, 0.1)",
@@ -122,7 +125,7 @@ export default function Hero() {
         )}
 
         {/* Left content */}
-        <div style={{ flex: 1, minWidth: 0}}>
+        <div style={{ flex: 1, minWidth: 0 }}>
           {/* Status badge */}
           <div
             style={{
@@ -174,7 +177,7 @@ export default function Hero() {
                 color: "#f1f5f9",
               }}
             >
-               Hi, I'm Tejas Jadhav,
+              Hi, I'm Tejas Jadhav,
             </span>
             <span
               style={{
@@ -188,7 +191,11 @@ export default function Hero() {
             >
               <span style={{ color: "#64748b", fontWeight: 600 }}>a</span>
               <span style={{ color: "#06b6d4" }}>{displayed}</span>
-              <span style={{ color: "#06b6d4", animation: "blink 1s infinite" }}>|</span>
+              <span
+                style={{ color: "#06b6d4", animation: "blink 1s infinite" }}
+              >
+                |
+              </span>
             </span>
           </h1>
 
@@ -300,7 +307,6 @@ export default function Hero() {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              
             }}
           >
             <img

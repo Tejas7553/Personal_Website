@@ -57,4 +57,4 @@ Fonts: Syne (headings) · DM Sans (body) · JetBrains Mono (code/labels)
 - Update canonical URL in public/index.html
 - Replace Medium article URLs in Writing.jsx with real ones
 - Deploy to Vercel (zero config, recommended)
->>>>>>> d8516f3 (Initial commit)
+
