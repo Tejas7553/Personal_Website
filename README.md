@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 # Personal_Website
-=======
+
 # Tejas Jadhav — Portfolio Website
 
 A modern, SEO-optimised portfolio built with **React.js** and **Tailwind CSS**.
