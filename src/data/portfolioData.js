@@ -4,7 +4,7 @@ export const personalInfo = {
   tagline: "I turn complex requirements into fast, beautiful interfaces.",
   elevator:
     "Frontend Engineer with 3.5+ years shipping scalable web apps at Infosys. I specialise in React.js and Next.js — optimising performance, building reusable component systems, and turning product specs into polished, accessible UIs that users actually enjoy.",
-  location: "Pune, Maharashtra, India",
+  location: "Mumbai, Maharashtra, India",
   email: "jadhav.tejas7553@gmail.com",
   phone: "+91 8291680102",
   availability: "Open to opportunities",
